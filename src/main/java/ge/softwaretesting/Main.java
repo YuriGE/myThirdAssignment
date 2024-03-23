@@ -6,12 +6,11 @@ public class Main
     {
         int [] arr = {18,-3,5,-7,6,89,13,0,-89};
 
-        int temp = 0;
         for (int i = 0; i <arr.length - 1; i++) {
             for (int j = 0; j <arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // Swap elements
-                    temp = arr[j];
+                    int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
